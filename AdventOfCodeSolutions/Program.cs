@@ -3,9 +3,9 @@ using System;
 
 namespace AdventOfCodeSolutions
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        protected static void Main(string[] args)
         {
             Day4RiddleSolution day4RiddleSolution = new Day4RiddleSolution();
             day4RiddleSolution.Solve();

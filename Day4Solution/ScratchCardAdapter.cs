@@ -8,7 +8,7 @@ namespace Day4Solution
     {
         public ScratchCard Adapt(string input)
         {
-            var parts = input.Split(new []{':','|'});
+            var parts = input.Split(':', '|');
             var cardId = parts[0];
             var winningNumbers = parts[1].Trim().Split(' ',StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
             var yourNumbers = parts[2].Trim().Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
